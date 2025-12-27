@@ -135,7 +135,7 @@ export default function Home() {
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 1, ease: cubicBezier(0.16, 1, 0.3, 1) }}
           className="max-w-5xl mx-auto bg-black rounded-[2.5rem] md:rounded-[3rem] p-10 md:p-24 text-center text-white overflow-hidden relative"
         >
           <div className="relative z-10">
